@@ -4,24 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>Drill 2</title>
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+                .navbar {
+            padding: 0.8rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            background-color: #ffffff;
+        }
 
+     .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+.nav-link {
+            color: var(--text-muted) !important;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+    .nav-link.active-page {
+            color: var(--brand-primary) !important;
+            font-weight: 700;
+        }
+        
+        body{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-<div class="card">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-1">
+            <div class="collapse navbar-collapse justify-content-start show">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home Page</a></li>
+                     <li class="nav-item"><a class="nav-link" href="page2.html">Club Checker</a></li>
+                     <li class="nav-item"><a class="nav-link" href="page3.html">Non-Element Finder</a></li>
+                     <li class="nav-item"><a class="nav-link" href="page4.html">Meet the creator</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<h2>Add New Member</h2>
+<br>
+<h1>Meet the creator!</h1>
+<br>
 
-    <input type="text" id="firstname" placeholder="Firstname">
-    <br><br>
-    <input type="text" id="surname" placeholder="Surname">
-    <br><br>
-    <button type="button" py-click="submit">Submit</button>
-    <br><br>
-    <div id="output"></div>
-</div>
+    <div id="formo">
+        <h5>My name: Jacob Sherburn || Rarssy (Online name)
+            <br><br>
+            Gender: MALE
+            <br><br>
+            My Interests: Gaming, sometimes drawing, Serious and lighthearted tone games
+            <br><br>
+            Who I wanna be: Kinda an animator I don't know
+            <br><br>
+            What I listen to: Video game OSTs, Scenecore type music, Rebzyyx and so on and so forth
+            <br><br>
+            My favorite games: Doors, DW, Ultrakill, Terraria, Limbus Company, Pizza Tower, and eventually Deltarune
+            </h5>
+    </div>
 
-    <script type="py" src="main.py"></script>
+
 </body>
 </html>
